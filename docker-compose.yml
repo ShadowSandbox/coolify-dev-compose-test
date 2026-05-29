@@ -1,0 +1,24 @@
+services:
+  nginx-app-1:
+    image: nginx:latest
+    container_name: nginx-app-1
+    environment:
+      APP_ENV: development
+      APP_NAME: frontend
+    restart: unless-stopped
+
+  nginx-app-2:
+    image: nginx:latest
+    container_name: nginx-app-2
+    environment:
+      APP_ENV: staging
+      APP_NAME: api
+    restart: unless-stopped
+
+  nginx-app-3:
+    image: nginx:latest
+    container_name: nginx-app-3
+    environment:
+      APP_ENV: production
+      APP_NAME: admin
+    restart: unless-stopped
