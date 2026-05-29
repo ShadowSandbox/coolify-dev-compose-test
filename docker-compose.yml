@@ -3,7 +3,7 @@ services:
     image: nginx:alpine
     container_name: nginx-app-1
     environment:
-      APP_ENV: development
+      APP_ENV: production
       APP_NAME: frontend
     restart: unless-stopped
 
