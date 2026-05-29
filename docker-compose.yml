@@ -1,7 +1,7 @@
 services:
   nginx-app-1:
     image: nginx:alpine
-    container_name: nginx-app-1
+    container_name: nginx-app-1s
     environment:
       APP_ENV: production
       APP_NAME: frontend
@@ -9,7 +9,7 @@ services:
 
   nginx-app-2:
     image: nginx:alpine
-    container_name: nginx-app-2
+    container_name: nginx-app-2s
     environment:
       APP_ENV: debug
       APP_NAME: api
