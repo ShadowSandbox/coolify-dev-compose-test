@@ -11,7 +11,7 @@ services:
     image: nginx:alpine
     container_name: nginx-app-2
     environment:
-      APP_ENV: stagings
+      APP_ENV: debug
       APP_NAME: api
     restart: unless-stopped
 
