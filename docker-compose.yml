@@ -20,5 +20,5 @@ services:
     container_name: nginx-app-3
     environment:
       APP_ENV: production
-      APP_NAME: admin
+      APP_NAME: admins
     restart: unless-stopped
